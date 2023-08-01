@@ -3,7 +3,7 @@
 	"package": "nodeathanimations.nodeathanimations.mixin.client",
 	"compatibilityLevel": "JAVA_17",
 	"client": [
-		"ExampleClientMixin"
+		"NoDeathAnimationMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
