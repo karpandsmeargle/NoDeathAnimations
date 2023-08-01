@@ -16,10 +16,10 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"nodeathanimations.nodeathanimations.ExampleMod"
+			"nodeathanimations.nodeathanimations.NoDeathAnimationMod"
 		],
 		"client": [
-			"nodeathanimations.nodeathanimations.ExampleModClient"
+			"nodeathanimations.nodeathanimations.NoDeathAnimationModClient"
 		]
 	},
 	"mixins": [
