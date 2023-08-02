@@ -1,2 +1,2 @@
 # NoDeathAnimations
-Fabric mod to disable entity death animations
+Removes entity tilt and fall over death animation. Similar to the Tweakeroo feature in the DISABLE menu. Motivation was to have this feature in a standalone mod that is fair play for multiplayer. Does not disable targeting dead entities, which is considered an unfair advantage.

@@ -10,13 +10,11 @@ import net.minecraft.client.render.entity.EntityRenderDispatcher;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 
-import nodeathanimations.nodeathanimations.NoDeathAnimationMod;
-
 @Mixin(EntityRenderDispatcher.class)
 public class NoDeathAnimationMixin {
     @Inject(method = "shouldRender", at = @At("HEAD"), cancellable = true)
     private void onShouldRender(Entity entity, Frustum frustum, double camX, double camY, double camZ, CallbackInfoReturnable<Boolean> cir) {
-        if (NoDeathAnimationMod.CONFIG.enabled() && entity instanceof LivingEntity && ((LivingEntity) entity).getHealth() <= 0f) {
+        if (entity instanceof LivingEntity && ((LivingEntity) entity).getHealth() <= 0f) {
             cir.setReturnValue(false);
         }
     }
