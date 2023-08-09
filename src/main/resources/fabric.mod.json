@@ -3,27 +3,22 @@
 	"id": "nodeathanimations",
 	"version": "${version}",
 	"name": "NoDeathAnimations",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Removes entity tilt and fall over death animation. Similar to the Tweakeroo feature in the DISABLE menu. Motivation was to have this feature in a standalone mod that is fair play for multiplayer. Does not disable targeting dead entities, which is considered an unfair advantage.",
 	"authors": [
-		"Me!"
+		"karpandsmeargle"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/karpandsmeargle/NoDeathAnimations"
 	},
 	"license": "GPLv3",
 	"icon": "assets/nodeathanimations/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"nodeathanimations.nodeathanimations.NoDeathAnimationMod"
-		],
 		"client": [
 			"nodeathanimations.nodeathanimations.NoDeathAnimationModClient"
 		]
 	},
 	"mixins": [
-		"nodeathanimations.mixins.json",
 		{
 			"config": "nodeathanimations.client.mixins.json",
 			"environment": "client"
@@ -34,8 +29,5 @@
 		"minecraft": "~1.19.3",
 		"java": ">=17",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	}
 }
