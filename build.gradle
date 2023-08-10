@@ -106,3 +106,17 @@ eclipse {
         } 
     }
 }
+
+import com.modrinth.minotaur.dependencies.ModDependency;
+modrinth {
+	token = System.getenv("MODRINTH_TOKEN")
+    projectId = 'LpPRm1Zu'
+    uploadFile = remapJar
+    dependencies = [
+        new ModDependency('ccKDOlHs', 'embedded') // owolib
+    ]
+
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	System.out.println("Enter changelog: ");
+	changelog = br.readLine();
+}
