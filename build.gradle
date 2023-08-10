@@ -2,6 +2,7 @@ plugins {
 	id 'fabric-loom' version '1.3-SNAPSHOT'
 	id 'maven-publish'
 	id 'eclipse'
+	id "com.modrinth.minotaur" version "2.+"
 }
 
 version = "${project.mod_version}+${project.minecraft_version}"
@@ -101,4 +102,15 @@ eclipse {
             entries.add(src)
         } 
     }
+}
+
+import com.modrinth.minotaur.dependencies.ModDependency;
+modrinth {
+	token = System.getenv("MODRINTH_TOKEN")
+    projectId = 'LpPRm1Zu'
+    uploadFile = remapJar
+
+	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	System.out.println("Enter changelog: ");
+	changelog = br.readLine();
 }
