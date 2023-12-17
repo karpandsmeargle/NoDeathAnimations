@@ -10,7 +10,6 @@ modrinth {
 	token = System.getenv("MODRINTH_TOKEN")
     projectId = 'LpPRm1Zu'
     uploadFile = remapJar
-    dependencies = []
 }
 
 version = "${project.mod_version}+${project.minecraft_version}"
@@ -26,7 +25,6 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
-	maven { url 'https://maven.wispforest.io' }
 }
 
 loom {
@@ -58,9 +56,11 @@ dependencies {
 
 processResources {
 	inputs.property "version", project.version
+	inputs.property "loader_version", project.loader_version
+	inputs.property "minecraft_version", project.minecraft_version
 
 	filesMatching("fabric.mod.json") {
-		expand "version": project.version
+		expand project.properties
 	}
 }
 
