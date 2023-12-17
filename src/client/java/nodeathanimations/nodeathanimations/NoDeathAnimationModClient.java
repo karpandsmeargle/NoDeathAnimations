@@ -8,7 +8,6 @@ import net.fabricmc.api.ClientModInitializer;
 public class NoDeathAnimationModClient implements ClientModInitializer {
 
     public static final Logger LOGGER = LoggerFactory.getLogger("nodeathanimations");
-    public static final NDAConfig CONFIG = NDAConfig.createAndLoad();
 
     @Override
     public void onInitializeClient() {
