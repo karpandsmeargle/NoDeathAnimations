@@ -1,5 +1,5 @@
 # NoDeathAnimations
-Removes entity tilt and fall over death animation. Similar to the Tweakeroo feature in the DISABLE menu. Motivation was to have this feature in a standalone mod that is fair play for multiplayer. Does not disable targeting dead entities, which is considered an unfair advantage.
+Completely prevents rendering dead entities. Similar to the Tweakeroo feature in the DISABLE menu. Motivation was to have this feature in a standalone mod that is fair play for multiplayer. Does not disable targeting dead entities, which is considered an unfair advantage.
 
 Visit the [Modrinth Link](https://modrinth.com/mod/nodeathanimations) to download.
 
