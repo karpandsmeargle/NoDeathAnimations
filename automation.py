@@ -3,22 +3,22 @@ import subprocess
 MOD_VERSION = "1.0.2"
 VERSION_DATA = [
     {
-        "minecraft_version": "1.21.8",
+        "minecraft_version": "1.21.11",
         "loader_version": "0.19.3",
-        "yarn_mappings": "1.21.8+build.1",
-        "fabric_version": "0.136.1+1.21.8",
+        "yarn_mappings": "1.21.11+build.6",
+        "fabric_version": "0.141.4+1.21.11",
     },
     {
-        "minecraft_version": "1.21.7",
+        "minecraft_version": "1.21.10",
         "loader_version": "0.19.3",
-        "yarn_mappings": "1.21.7+build.8",
-        "fabric_version": "0.129.0+1.21.7",
+        "yarn_mappings": "1.21.10+build.3",
+        "fabric_version": "0.138.4+1.21.10",
     },
     {
-        "minecraft_version": "1.21.6",
+        "minecraft_version": "1.21.9",
         "loader_version": "0.19.3",
-        "yarn_mappings": "1.21.6+build.1",
-        "fabric_version": "0.128.2+1.21.6",
+        "yarn_mappings": "1.21.9+build.1",
+        "fabric_version": "0.134.1+1.21.9",
     },
 ]
 

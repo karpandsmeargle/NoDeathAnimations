@@ -7,6 +7,26 @@ Version Data, used in automation:
 ```py
 # Java 21, Gradle 9.5.1
 {
+    "minecraft_version": "1.21.11",
+    "loader_version": "0.19.3",
+    "yarn_mappings": "1.21.11+build.6",
+    "fabric_version": "0.141.4+1.21.11",
+},
+{
+    "minecraft_version": "1.21.10",
+    "loader_version": "0.19.3",
+    "yarn_mappings": "1.21.10+build.3",
+    "fabric_version": "0.138.4+1.21.10",
+},
+{
+    "minecraft_version": "1.21.9",
+    "loader_version": "0.19.3",
+    "yarn_mappings": "1.21.9+build.1",
+    "fabric_version": "0.134.1+1.21.9",
+},
+    
+# Java 21, Gradle 9.5.1
+{
     "minecraft_version": "1.21.8",
     "loader_version": "0.19.3",
     "yarn_mappings": "1.21.8+build.1",
