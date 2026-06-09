@@ -5,6 +5,26 @@ Visit the [Modrinth Link](https://modrinth.com/mod/nodeathanimations) to downloa
 
 Version Data, used in automation:
 ```py
+# Java 21, Gradle 9.5.1
+{
+    "minecraft_version": "1.21.8",
+    "loader_version": "0.19.3",
+    "yarn_mappings": "1.21.8+build.1",
+    "fabric_version": "0.136.1+1.21.8",
+},
+{
+    "minecraft_version": "1.21.7",
+    "loader_version": "0.19.3",
+    "yarn_mappings": "1.21.7+build.8",
+    "fabric_version": "0.129.0+1.21.7",
+},
+{
+    "minecraft_version": "1.21.6",
+    "loader_version": "0.19.3",
+    "yarn_mappings": "1.21.6+build.1",
+    "fabric_version": "0.128.2+1.21.6",
+},
+
 # Java 21, Gradle 8.12
 {
     "minecraft_version": "1.21.5",
