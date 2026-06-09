@@ -3,22 +3,19 @@ import subprocess
 MOD_VERSION = "1.0.2"
 VERSION_DATA = [
     {
-        "minecraft_version": "1.21.11",
+        "minecraft_version": "26.1.2",
         "loader_version": "0.19.3",
-        "yarn_mappings": "1.21.11+build.6",
-        "fabric_version": "0.141.4+1.21.11",
+        "fabric_version": "0.151.0+26.1.2",
     },
     {
-        "minecraft_version": "1.21.10",
+        "minecraft_version": "26.1.1",
         "loader_version": "0.19.3",
-        "yarn_mappings": "1.21.10+build.3",
-        "fabric_version": "0.138.4+1.21.10",
+        "fabric_version": "0.145.4+26.1.1",
     },
     {
-        "minecraft_version": "1.21.9",
+        "minecraft_version": "26.1",
         "loader_version": "0.19.3",
-        "yarn_mappings": "1.21.9+build.1",
-        "fabric_version": "0.134.1+1.21.9",
+        "fabric_version": "0.145.1+26.1",
     },
 ]
 
@@ -29,7 +26,6 @@ if __name__ == "__main__":
     for entry in VERSION_DATA[::-1]:
         minecraft_version = entry["minecraft_version"]
         loader_version = entry["loader_version"]
-        yarn_mappings = entry["yarn_mappings"]
         fabric_version = entry["fabric_version"]
         with open("gradle.properties", "w") as fout:
             fout.write(
@@ -41,7 +37,6 @@ org.gradle.parallel=true
 # Fabric Properties
 # check these on https://fabricmc.net/develop
 minecraft_version={minecraft_version}
-yarn_mappings={yarn_mappings}
 loader_version={loader_version}
 
 # Mod Properties
